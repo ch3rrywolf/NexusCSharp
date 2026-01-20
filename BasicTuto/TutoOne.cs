@@ -52,3 +52,18 @@ void OrderPrecedence()
     int h = (e + f) / g; // Integer dividion always produces an integer result
     Console.WriteLine(h);
 }
+
+/*  ### 3.Explore integer precision and limits ###*/
+int a = 7;
+int b = 4;
+int c = 3;
+int d = (a + b) / c;
+int e = (a + b) % c; // the remainder by using the remainder operator "%" caracter
+Console.WriteLine($"quotient: {d}");
+Console.WriteLine($"remainder: {e}");
+int max = int.MaxValue; // maximum limits
+int min = int.MinValue; // minimum limits
+Console.WriteLine($"The range of integers is {min} to {max}");
+int what = max + 3; // overflow or underflow
+Console.WriteLine($"An example of overflow: {what}");
+Console.WriteLine($"{max - what}"); // ?? i see logic here bro ;)
