@@ -2,7 +2,7 @@
     Basic CSharp (C#) learn with @ch3rrywolf.exe
     ##### ###### #### ##### #### ###############
 
-   Part 1: 
+   Tutorial: Explore the C# language. 
     1. Declare and use variables.
     2. Work with strings.
     3. Remove whitespace from strings.
