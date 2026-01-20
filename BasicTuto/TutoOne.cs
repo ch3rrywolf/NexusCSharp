@@ -31,6 +31,7 @@ void WorkWithIntegers()
     Console.WriteLine(c);
 }
 
+
 /*  ### 2.Explore order of operations ###*/
 // the rules you learned in mathematics
 OrderPrecedence();
@@ -53,6 +54,7 @@ void OrderPrecedence()
     Console.WriteLine(h);
 }
 
+
 /*  ### 3.Explore integer precision and limits ###*/
 int a = 7;
 int b = 4;
@@ -67,3 +69,34 @@ Console.WriteLine($"The range of integers is {min} to {max}");
 int what = max + 3; // overflow or underflow
 Console.WriteLine($"An example of overflow: {what}");
 Console.WriteLine($"{max - what}"); // ?? i see logic here bro ;)
+
+
+/*  ### 4.Work with the double type ###*/
+// Single precision numbers are declared by using the float keyword
+double a = 5;
+double b = 4;
+double c = 2;
+double d = (a + b) / c; // the decimal portion of the quotient
+Console.WriteLine(d);
+double aa = 19;
+double bb = 23;
+double cc = 8;
+double dd = (aa + bb) / cc;
+Console.WriteLine(dd);
+double max = double.MaxValue;
+double min = double.MinValue;
+Console.WriteLine($"The range of double is {min} to {max}"); //The number to the right is the exponent, as a power of 10
+double third = 1.0 / 3.0; // 0.33 is 33/100 That value is closer to 1/3, but still not exact
+Console.WriteLine(third);
+//Challenge: calculations with large numbers, small numbers, multiplication, and division by using the double type, Name that new method WorkWithDoubles.
+WorkWithDoubles();
+
+void WorkWithDoubles()
+{
+    double z = 15E+50;
+    double x = 20.15;
+    double y = z * x;
+    double yy = z / x;
+    Console.WriteLine($"multiplication: {y}");
+    Console.WriteLine($"division: {yy}");
+}
