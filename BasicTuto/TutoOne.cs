@@ -100,3 +100,20 @@ void WorkWithDoubles()
     Console.WriteLine($"multiplication: {y}");
     Console.WriteLine($"division: {yy}");
 }
+
+
+/*  ### 5.Work with decimal types ###*/
+//The decimal type has a smaller range but greater precision than double
+decimal min = decimal.MinValue;
+decimal max = decimal.MaxValue;
+Console.WriteLine($"The range of the decimal type is {min} to {max}");
+double a = 1.0;
+double b = 3.0;
+Console.WriteLine(a / b);
+decimal c = 1.0M; // THe M suffix on the numbers indicates that a constant should use the decimal tyme, Otherwise, the compiler assumes the double type
+decimal d = 3.0M; // The lettre M is the most visually distinct letter between the double and decimal keywords
+Console.WriteLine(c / d);
+//Challenge: write code that calculates the area of a circle whose radius is 2.50 centimeters. Remember that the area of a circle is the radius squared multiplied by PI.
+double radius = 2.50;
+double area = Math.PI * radius * radius;
+Console.WriteLine($"area = {area}");
