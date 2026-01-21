@@ -28,3 +28,56 @@ var nameData = (Name: "Morning observation", Temp: 17, Wind: 4);
 var person = (FirstName: "", LastName: "");
 var order = (ProductHeaderValue: "guitar picks", style: "triangle", quantity: 500, UnitPrice: 0.10m);
 Console.WriteLine($"Name data: {nameData} Person: {person} Order: {order}");
+
+
+/*  ### 2.Create record types ###*/
+// tuples are great for those times when you want multiple valuess in the same structure.
+// they're lightweight, and you can declare them as you use them.
+// your program grows, you might find that you use the same tuple type throughout your code.
+using System;
+public record Point(int X, int Y);
+class Program
+{
+    static void Main()
+    {
+        Point pt3 = new Point(1, 1);
+        var pt4 = pt3 with { Y = 10 };
+        Console.WriteLine($"The two points are {pt3} and {pt4}");
+    }
+}
+// You can add behavoir to a record type by declaring members.
+// A record member can be a function or more data elements.
+// The members of a type are in type declaration, between { and } caracters
+using System;
+public record Point(int X, int Y)
+{
+    public double Slope() => (double)Y / (double)X;
+}
+class Program
+{
+    static void Main()
+    {
+        Point pt3 = new Point(1, 1);
+        var pt4 = pt3 with { Y = 10 };
+        Console.WriteLine($"The two points are {pt3} and {pt4}");
+    double slopeResult = pt4.Slope();
+Console.WriteLine($"The slope of {pt4} is {slopeResult}");
+    }
+}
+// A record struct is a struct type that includes the extra behavoir added to all record types.
+using System;
+public record struct Point(int X, int Y)
+{
+    public double Slope() => (double)Y / (double)X;
+}
+class Program
+{
+    static void Main()
+    {
+        Point pt3 = new Point(1, 1);
+        var pt4 = pt3 with { Y = 10 };
+        Console.WriteLine($"The two points are {pt3} and {pt4}");
+    double slopeResult = pt4.Slope();
+Console.WriteLine($"The slope of {pt4} is {slopeResult}");
+    }
+}
