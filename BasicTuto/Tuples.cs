@@ -81,3 +81,16 @@ class Program
 Console.WriteLine($"The slope of {pt4} is {slopeResult}");
     }
 }
+
+
+/*  ### 3.Struct, class, and interface types ###*/
+// - All concrete named types in C# are either class or struct types, including record types.
+// - class is a reference type.
+// - struct is a value type.
+// - Variables of a value type store the contents of the instance inline in memory.
+// - a record struct Point stores two integers: X and Y.
+// - a record class Point stores a reference to a block of memory that holds the values for X and Y.
+// - the record modifier instructs the compiler to write several members for you.
+// - Use struct types for value types when you need more sophisticated behavoir, but the primary responsibility is storing values.
+// - Use class types to use object-oriented idioms like encapsulation, inheritance, and ploymorphism.
+// - Define interface types to declare behavioral contracts that different type must implement, Both struct and class types can implement interface.
