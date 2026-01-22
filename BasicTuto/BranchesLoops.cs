@@ -12,7 +12,7 @@
 */
 
 
-/* ### 1.Use if statements ###*/
+/* ### 1.Use if statements ###
 // The if statement checks the value of a bool.
 // When the value is true, the statement following the if executes. 
 // this process of checking conditions and executing statements based on those conditions is powerful.
@@ -22,8 +22,8 @@ b = 3;
 if (a + b > 10) // nothing is printed. condition is false
     Console.WriteLine("The answer is greater than 10.");
 
-
-/* ### 2.Make if and else work together ###*/
+*/
+/* ### 2.Make if and else work together ###
 int a = 5;
 int b = 3;
 if (a + b > 10)
@@ -102,4 +102,27 @@ else
     Console.WriteLine("The answer is not greater than 10");
     Console.WriteLine("And the first number is not greater than the second");
 }
+}
+*/
+
+
+/* ### 3.Use loops to repeat operations ###*/
+int counter = 0;
+while (counter < 10) // the while loop tests the condition before executing the code following the while.
+{
+    Console.WriteLine($"Hello World! the counter is {counter}");
+    counter++; // increment the counter by 1 "exmpl" : counter = counter + 1;
+}
+int counter = 0;
+do
+{
+    Console.WriteLine($"Hello World! the counter is {counter}");
+    counter++;
+} while (counter < 10); // the do...while loop executes the code once before testing the condition at the end of the loop.
+
+
+/* ### 4.Work with the for loop ###*/
+for (int counter = 0; counter < 10; counter++) // the for loop combines the initialization, condition, and increment in one line.
+{
+    Console.WriteLine($"Hello World! the counter is {counter}");
 }
