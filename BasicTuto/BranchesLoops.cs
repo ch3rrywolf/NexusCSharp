@@ -12,7 +12,7 @@
 */
 
 
-/* ### 1.Use if statements ###
+/* ### 1.Use if statements ###*/
 // The if statement checks the value of a bool.
 // When the value is true, the statement following the if executes. 
 // this process of checking conditions and executing statements based on those conditions is powerful.
@@ -22,8 +22,8 @@ b = 3;
 if (a + b > 10) // nothing is printed. condition is false
     Console.WriteLine("The answer is greater than 10.");
 
-*/
-/* ### 2.Make if and else work together ###
+
+/* ### 2.Make if and else work together ###*/
 int a = 5;
 int b = 3;
 if (a + b > 10)
@@ -103,7 +103,7 @@ else
     Console.WriteLine("And the first number is not greater than the second");
 }
 }
-*/
+
 
 
 /* ### 3.Use loops to repeat operations ###*/
@@ -125,4 +125,33 @@ do
 for (int counter = 0; counter < 10; counter++) // the for loop combines the initialization, condition, and increment in one line.
 {
     Console.WriteLine($"Hello World! the counter is {counter}");
+}
+
+
+/* ### 5.Created nested loops ###*/
+for (int row = 1; row < 11; row++)
+{
+    Console.WriteLine($"the row is {row}");
+}
+for (char column = 'a'; column < 'k'; column++)
+{
+    Console.WriteLine($"the column is {column}");
+}
+for (int row = 1; row < 11; row++)
+{
+    for (char column = 'a'; column < 'k'; column++)
+    {
+        Console.WriteLine($"the cell is {row}, {column}");
+    }
+}
+ExploreLoops();
+void ExploreLoops()
+{
+    for (int row = 11; row > 1; row--)
+{
+    for (char column = 'k'; column > 'a'; column--)
+    {
+        Console.WriteLine($"the cell is {row}, {column}"); // the outer loop increments once for each full run of the inner loop.
+    }
+}
 }
