@@ -9,3 +9,16 @@
     4. Lists of other types.
     5. Challenge.
 */
+
+
+/* ### 1.A basic list example ###*/
+// created a list of strings
+// added three names to that list
+// and printed the names in all caps
+List<string> names = ["<name>", "Ana", "Felipe"];
+foreach (var name in names)
+{
+    Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+
+/* ### 2.Modify list contents ###*/
