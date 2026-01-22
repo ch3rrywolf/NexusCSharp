@@ -105,7 +105,6 @@ else
 }
 
 
-
 /* ### 3.Use loops to repeat operations ###*/
 int counter = 0;
 while (counter < 10) // the while loop tests the condition before executing the code following the while.
@@ -155,3 +154,16 @@ void ExploreLoops()
     }
 }
 }
+
+
+/* ### 6.Combine branches and loops ###*/
+int sum = 0;
+for (int number = 1; number < 21; number++)
+{
+    if (number % 3 == 0)
+    {
+        Console.WriteLine($"{number} is divisible by 3");
+        sum = sum + number;
+    }
+}
+Console.WriteLine($"The sum is {sum}");
