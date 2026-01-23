@@ -15,15 +15,15 @@
 // created a list of strings
 // added three names to that list
 // and printed the names in all caps
-/*List<string> names = ["<name>", "Ana", "Felipe"];
+List<string> names = ["<name>", "Ana", "Felipe"];
 foreach (var name in names)
 {
     Console.WriteLine($"Hello {name}!");
 }
-*/
+
 
 /* ### 2.Modify list contents ###*/
-/*List<string> names = ["<name>", "Ana", "Felipe"];
+List<string> names = ["<name>", "Ana", "Felipe"];
 //Console.WriteLine();
 names.Add("Maria"); // added a name
 names.Add("Bill");
@@ -35,7 +35,7 @@ foreach (var name in names)
     Console.WriteLine($"I've added {names[2]} and {names[3]} to the list."); // accessed specific list items
     Console.WriteLine($"The list has {names.Count} people in it."); // printed list count
 }
-*/
+
 
 /* ### 3.Search and sort lists ###*/
 List<string> names = ["<name>", "zz", "Ana", "Felipe", "bat","Not Found"];
@@ -60,4 +60,28 @@ names.Sort();
 foreach ( var name in names)
 {
     Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+
+
+/* ### 4.Lists of other types ###*/
+List<int> fibonacciNumbers = [1, 1];
+    var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
+    var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
+    fibonacciNumbers.Add(previous + previous2);
+foreach (var item in fibonacciNumbers)
+{
+    Console.WriteLine(item);
+}
+
+/* ### 5.Challenge ###*/
+List<int> fibonacciNumbers = [1, 1];
+while (fibonacciNumbers.Count < 20)
+{
+    var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
+    var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
+    fibonacciNumbers.Add(previous + previous2);
+}
+foreach (var item in fibonacciNumbers)
+{
+    Console.WriteLine(item);
 }
