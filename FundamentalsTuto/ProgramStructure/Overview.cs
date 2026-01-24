@@ -71,3 +71,8 @@ Console.WriteLine("Hello world!");
 }
 
 /* ### 2. Building and running C# programs. ###*/
+#!/usr/local/share/dotnet/dotnet run // the #! sequence for Unix shells
+Console.WriteLine("Hello, World!");
+
+
+/* ### 3. Expressions and statements. ###*/
