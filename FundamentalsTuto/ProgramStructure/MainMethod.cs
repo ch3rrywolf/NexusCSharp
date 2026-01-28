@@ -64,3 +64,30 @@ class MainReturnValTest
 //Return value =  1
 //Execution Failed
 //Return value =  1
+
+/* ### 3. Async Main return values. ###*/
+// An advantage of declaring Main as async is that the compiler always generates the correct code.
+// When the application entry point returns a Task or Task<int>, the compiler generates a new entry point that calls the entry point method declared in the application code.
+// Assuming that this entry point is called $GeneratedMain.
+class Program
+{
+    static async Task<int> Main(string[] args)
+    {
+        return await AsyncConsoleWork();
+    }
+
+    private static async Task<int> AsyncConsoleWork()
+    {
+        return 0;
+    }
+}
+
+static Task Main() //results in the compiler emitting the equivalent of private static void 
+// $GeneratedMain() => Main().GetAwaiter().GetResult();.
+static Task Main(string[]) //results in the compiler emitting the equivalent of private static void 
+// $GeneratedMain(string[] args) => Main(args).GetAwaiter().GetResult();.
+static Task<int> Main() //results in the compiler emitting the equivalent of private static int 
+// $GeneratedMain() => Main().GetAwaiter().GetResult();.
+static Task<int> Main(string[]) //results in the compiler emitting the equivalent of private static int 
+// $GeneratedMain(string[] args) => Main(args).GetAwaiter().GetResult();.
+//If the examples use the async modifier on the Main method, the compiler generates the same code.
