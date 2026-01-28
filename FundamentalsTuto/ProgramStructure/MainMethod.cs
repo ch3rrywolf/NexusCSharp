@@ -91,3 +91,16 @@ static Task<int> Main() //results in the compiler emitting the equivalent of pri
 static Task<int> Main(string[]) //results in the compiler emitting the equivalent of private static int 
 // $GeneratedMain(string[] args) => Main(args).GetAwaiter().GetResult();.
 //If the examples use the async modifier on the Main method, the compiler generates the same code.
+
+
+/* ### 4. Command-line arguments. ###*/
+// You can send arguments to the Main method by defining the method in one of the following ways.
+static void Main(string[] args)	//No return value or await
+static int Main(string[] args)	//Returns a value but doesn't use await
+static async Task Main(string[] args)	//Uses await but doesn't return a value
+static async Task<int> Main(string[] args)	//Return a value and uses await
+// If you don't use the arguments, you can omit args from the method declaration for slightly simpler code.
+static void Main()	//No return value or await
+static int Main()	//Returns a value but doesn't use await
+static async Task Main()	//Uses await but doesn't return a value
+static async Task<int> Main()	//Returns a value and uses await
