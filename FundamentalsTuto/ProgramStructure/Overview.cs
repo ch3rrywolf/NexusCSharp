@@ -76,3 +76,18 @@ Console.WriteLine("Hello, World!");
 
 
 /* ### 3. Expressions and statements. ###*/
+// Expression is combination of value, variables, operators and method calls that evaluate to a single value.
+42 //Literal value
+x + y //arithmetic operation
+Math.Max(a, b)
+condition ? trueValue : falseValue // conditional expression
+new Person("John") // object creation
+// Statement is a complete instruction that performs an action
+int x = 42; //declaration statement
+Console.WriteLine("Hello"); //expression statement - wraps a method call expression
+if (condition) { /*code*/}
+return result; //return statement
+//The key distinction: expressions evaluate to values, while statements perform actions.
+//Some constructs, like method calls, can be both.
+//For example: Math.Max(a, b) is an expression when used in int result = Math.Max(a, b);
+//But becomes an expression statement when written alone as Math.Max(a, b);
