@@ -38,16 +38,40 @@
 
 /* ### 3. using directives. ###*/
 // For the single file containing top-level statements using directives must come first in that file.
-using System.Text;
-StringBuilder builder = new();
-builder.AppendLine("The following arguments are passed:");
-foreach (var arg in args)
-{
-    builder.AppendLine($"Argument={arg}");
-}
-Console.WriteLine(builder.ToString());
-return 0;
+// using System.Text;
+// StringBuilder builder = new();
+// builder.AppendLine("The following arguments are passed:");
+// foreach (var arg in args)
+// {
+//     builder.AppendLine($"Argument={arg}");
+// }
+// Console.WriteLine(builder.ToString());
+// return 0;
 
 
 /* ### 4. Global namespace. ###*/
 // Top-level statements are implicitly in the global namespace.
+
+
+/* ### 5. Namespaces and type definitions. ###*/
+// A file with top-level statements can also contain namespaces and type definitions,
+// but they must come after the top-level statements.
+MyClass.TestMethod();
+MyNamespace.MyClass.MyMethod();
+public class MyClass
+{
+    public static void TestMethod()
+    {
+        Console.WriteLine("Hello World!");
+    }
+}
+namespace MyNamespace
+{
+    class MyClass
+    {
+        public static void MyMethod()
+        {
+            Console.WriteLine("Hello World from MyNamespace.MyClass.MyMethod!");
+        }
+    }
+}
