@@ -21,9 +21,33 @@
 // This means you can create programs without the ceremony of a Program class and a Main method.
 // the compiler generates a Program class with an entry point method for the application.
 // The name of the generated method isn't Main , it's an implementation detail that your code can't reference directly.
-Console.WriteLine("Hello World!");
+// Console.WriteLine("Hello World!");
 // An application must have only one entry point.
 // A project can have only one file with top-level statements.
 // Putting top-level statements in more than one file in a project results in the following compiler error:
 //CS8802 Only one compilation unit can have top-level statements.
 // A project can have any number of source code files that don't have top-level statements.
+
+
+/* ### 2. No other entry points. ###*/
+// You can write a Main method explicitly, but it can't function as an entry point.
+// The compiler issues the following warning:
+//CS7022 The entry point of the program is global code; ignoring 'Main()' entry point.
+//In a project with top-level statements, you can't use the -main compiler option to select the entry point, even if the project has one or more Main methods.
+
+
+/* ### 3. using directives. ###*/
+// For the single file containing top-level statements using directives must come first in that file.
+using System.Text;
+StringBuilder builder = new();
+builder.AppendLine("The following arguments are passed:");
+foreach (var arg in args)
+{
+    builder.AppendLine($"Argument={arg}");
+}
+Console.WriteLine(builder.ToString());
+return 0;
+
+
+/* ### 4. Global namespace. ###*/
+// Top-level statements are implicitly in the global namespace.
