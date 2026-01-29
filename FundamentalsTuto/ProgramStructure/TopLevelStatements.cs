@@ -21,7 +21,7 @@
 // This means you can create programs without the ceremony of a Program class and a Main method.
 // the compiler generates a Program class with an entry point method for the application.
 // The name of the generated method isn't Main , it's an implementation detail that your code can't reference directly.
-// Console.WriteLine("Hello World!");
+Console.WriteLine("Hello World!");
 // An application must have only one entry point.
 // A project can have only one file with top-level statements.
 // Putting top-level statements in more than one file in a project results in the following compiler error:
@@ -38,15 +38,15 @@
 
 /* ### 3. using directives. ###*/
 // For the single file containing top-level statements using directives must come first in that file.
-// using System.Text;
-// StringBuilder builder = new();
-// builder.AppendLine("The following arguments are passed:");
-// foreach (var arg in args)
-// {
-//     builder.AppendLine($"Argument={arg}");
-// }
-// Console.WriteLine(builder.ToString());
-// return 0;
+using System.Text;
+StringBuilder builder = new();
+builder.AppendLine("The following arguments are passed:");
+foreach (var arg in args)
+{
+    builder.AppendLine($"Argument={arg}");
+}
+Console.WriteLine(builder.ToString());
+return 0;
 
 
 /* ### 4. Global namespace. ###*/
@@ -75,3 +75,47 @@ namespace MyNamespace
         }
     }
 }
+
+
+/* ### 6. args. ###*/
+// Top-level statements can reference the args variable to access any command-line arguments that were entered.
+// The args variable is never null but its Length is zero if no command-line arguments were provided.
+if (args.Length > 0)
+{
+    foreach (var arg in args)
+    {
+        Console.WriteLine($"Argument={arg}");
+    }
+}
+else
+{
+    Console.WriteLine("No arguments");
+}
+
+
+/* ### 7. await. ###*/
+// You can call an async method by using await.
+Console.Write("Hello ");
+await Task.Delay(5000);
+Console.WriteLine("World!");
+
+
+/* ### 8. Exit code for the process. ###*/
+// To return an int value when the application ends,
+// use the return statement as you would in a Main method that returns an int .
+string? s = Console.ReadLine();
+int returnValue = int.Parse(s ?? "-1");
+return returnValue;
+
+
+/* ### 9. Implicit entry point method. ###*/
+// The compiler generates a method to serve as the program entry point for a project with top-level statements.
+// The signature of the method depends on whether the top-level statements contain the await keyword or the return statement.
+static async Task<int> Main(string[] args) //await and return 
+static async Task Main(string[] args) //await
+static int Main(string[] args) //return
+static void Main(string[] args) //No await or return
+// programs can be file based programs, where a single file contains the program.
+// You run file based programs with the command dotnet run <file.cs> ,
+// or using the
+// #!/usr/local/share/dotnet/dotnet run directive as the first line (unix shells only).
