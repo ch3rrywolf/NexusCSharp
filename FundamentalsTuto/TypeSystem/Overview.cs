@@ -54,3 +54,22 @@ var query = from item in source
 /* ### 2. Built-in types. ###*/
 // hese types represent integers, floating point values, Boolean expressions, text characters, decimal values, and other types of data.
 // The language also includes built-in string and object types.
+
+
+/* ### 3. Custom types. ###*/
+// Create structural types by using tuples for storing related data members.
+// These types provide a structure that holds multiple members.
+// Tuples have limited behavior.
+// They're a container for values.
+// These are the simplest types you can create.
+// You might later decide you need behavior.
+// In that case, you can convert a tuple to either a struct or class.
+// Use the struct, class, interface, enum, and record constructs to create your own custom types.
+// . If the data type isn't part of your app domain and doesn't include behavior, use a structural type.
+// . If the data storage size is small, no more than 64 bytes, choose a struct or record struct.
+// . If the type is immutable, or you want nondestructive mutation, choose a struct or record struct.
+// . If your type should have value semantics for equality, choose a record class or record struct.
+// . If the type is primarily for storing data, with minimal behavior, choose a record class or record struct.
+// . If the type is part of an inheritance hierarchy, choose a record class or a class.
+// . If the type uses polymorphism, choose a class.
+// . If the primary purpose is behavior, choose a class.
