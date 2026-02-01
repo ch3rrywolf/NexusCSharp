@@ -214,3 +214,21 @@ stringList.Add(4);
 /* ### 11. Implicit type declarations. ###*/
 // Implicitly type a local variable (but not class members) by using the var keyword.
 // The variable still receives a type at compile time, but the compiler provides the type.
+
+
+/* ### 12. Compile-time type and run-time type. ###*/
+// A variable can have different compile-time and run-time types.
+// The compile-time type is the declared or inferred type of the variable in the source code.
+// The run-time type is the type of the instance referred to by that variable.
+string message = "This is a string of characters";
+// In other cases, the compile-time type is different.
+object anotherMessage = "This is another string of characters";
+IEnumerable<char> someCharacters = "abcdefghijklmnopqrstuvwxyz";
+// In both of the preceding examples, the run-time type is a string.
+// The compile-time type is object in the first line, and IEnumerable<char> in the second.
+// If the two types are different for a variable, it's important to understand when the compile-time type and the run-time type apply.
+// The compile-time type determines all the actions the compiler takes.
+// These compiler actions include method call resolution, overload resolution, and available implicit and explicit casts.
+// The run-time type determines all actions that are resolved at run time.
+// These run-time actions include dispatching virtual method calls, evaluating is and switch expressions, and other type testing APIs.
+// To better understand how your code interacts with types, recognize which action applies to which type.
