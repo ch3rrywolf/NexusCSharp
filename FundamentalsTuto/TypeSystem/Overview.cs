@@ -182,3 +182,17 @@ Console.WriteLine(s);
 Type type = 12345.GetType();
 // Outputs: "System.Int32"
 Console.WriteLine(type);
+
+
+/* ### 8. Generic types. ###*/
+// Declare a type with one or more type parameters that act as placeholders for the actual type (the concrete type).
+// Client code provides the concrete type when it creates an instance of the type. These types are called generic types.
+// For example, the .NET type System.Collections.Generic.List<T> has one type parameter that by convention is named T.
+// When you create an instance of the type, you specify the type of the objects that the list contains, such as string.
+List<string> stringList = new List<string>();
+stringList.Add("String example");
+// compile time error adding a type other than a string:
+stringList.Add(4);
+// Using the type parameter makes it possible to reuse the same class to hold any type of element, without having to convert each element to object.
+// Generic collection classes are strongly typed collections because the compiler knows the specific type of the collection's elements and can raise an error at compile time if.
+// or example, you try to add an integer to the stringList object in the previous example.
