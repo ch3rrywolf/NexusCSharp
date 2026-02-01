@@ -7,7 +7,10 @@
       surface = 4 * pi * radius squared
       volume = 4 / 3 * pi * radius cubed
       
-    - Example: radius = 60
-      surface = 45238,93
-      volume = 678584,1
+    - Example:
+        Input:
+          radius = 60
+        Output:
+          surface = 45238,93
+          volume = 678584,1
 */
