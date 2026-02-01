@@ -44,6 +44,15 @@ int[] source = [0, 1, 2, 3, 4, 5];
 var query = from item in source
             where item <= limit
             select item;
+// You specify the types of method parameters and return values in the method declaration.
+public string GetName(int ID)
+{
+    if (ID < names.Length)
+        return names[ID];
+    else
+        return String.Empty;
+}
+private string[] names = ["Spencer", "Sally", "Doug"];
 // After you declare a variable, you can't redeclare it with a new type, and you can't assign a value that's incompatible with its declared type.
 // For example, you can't declare an int and then assign it a Boolean value of true .
 // However, you can convert values to other types, such aswhen you assign them to new variables or pass them as method arguments.
@@ -95,3 +104,68 @@ var query = from item in source
 // Structs typically store data that you don't modify after the struct is created.
 // Record types are data structures with extra compiler synthesized members.
 // Records typically store data that you don't modify after the object is created.
+
+
+/* ### 5. Value types. ###*/
+// Value types derive from System.ValueType, which derives from System.Object.
+// Types that derive from System.ValueType have special behavior in the CLR.
+// Value type variables directly contain their values.
+// The memory for a struct is allocated inline in whatever context the variable is declared.
+// You can declare record struct types that are value types and include the synthesized members for records.
+// Two categories of value types exist: struct and enum.
+// The built-in numeric types are structs, and they have fields and methods that you can access.
+// constant field on type 
+byte.byte b = byte.MaxValue;
+// But you declare and assign values to them as if they're simple non-aggregate types:
+byte num = 0xA;
+int i = 5;
+char c = 'Z';
+// Value types are sealed. You can't derive a type from any value type, such as System.Int32.
+// You can't define a struct to inherit from any user-defined class or struct because a struct can only inherit from System.ValueType.
+// a struct can implement one or more interfaces. You can cast a struct type to any interface type that it implements.
+// This cast causes a boxing operation to wrap the struct inside a reference type object on the managed heap.
+// Boxing operations occur when you pass a value type to a method that takes a System.Object or any interface type as an input parameter.
+// Use the struct keyword to create your own custom value types. Typically, a struct is used as a container for a small set of related variables.
+public struct Coords(int x, int y)
+{
+    public int X { get; init; } = x;
+    public int Y { get; init; } = y;
+}
+// An enum defines a set of named integral constants.
+public enum FileMode
+{
+    CreateNew = 1,
+    Create = 2,
+    Open = 3,
+    OpenOrCreate = 4,
+    Truncate = 5, Append = 6,
+}
+// The System.IO.FileMode.Create constant has a value of 2.
+// the name is much more meaningful for humans reading the source code, and for that reason it's better to use enumerations instead of constant literal numbers.
+// All enums inherit from System.Enum, which inherits from System.ValueType. All the rules that apply to structs also apply to enums.
+
+
+/* ### 6. Reference types. ###*/
+// A type that you define as a class , record class , record , delegate, array, or interface is a reference type.
+// When you declare a variable of a reference type, it contains the value null until you assign it with an instance of that type or create one by using the new operator.
+MyClass myClass = new();
+MyClass myClass2 = myClass;
+// You can't directly instantiate an interface by using the new operator. Instead, create and assign an instance of a class that implements the interface.
+MyClass myClass = new();
+// Declare and assign using an existing value.
+IMyInterface myInterface = myClass;
+// Or create and assign a value in a single statement.
+IMyInterface myInterface2 = new MyClass();
+// When you create the object, the system allocates memory on the managed heap.
+// The variable holds only a reference to the location of the object.
+// Types on the managed heap require overhead both when they're allocated and when they're reclaimed.
+// Garbage collection is the automatic memory management functionality of the CLR, which performs the reclamation.
+// However, garbage collection is also highly optimized, and in most scenarios it doesn't create aperformance issue.
+// All arrays are reference types, even if their elements are value types. Arrays implicitly derive from the System.Array class.
+// Declare and initialize an array of integers.
+int[] nums = [1, 2, 3, 4, 5];
+// Access an instance property of System.Array.
+int len = nums.Length;
+// Reference types fully support inheritance.
+// When you create a class, you can inherit from any other interface or class that isn't defined as sealed.
+// Other classes can inherit from your class and override your virtual methods.
