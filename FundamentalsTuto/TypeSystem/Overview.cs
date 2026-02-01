@@ -196,3 +196,21 @@ stringList.Add(4);
 // Using the type parameter makes it possible to reuse the same class to hold any type of element, without having to convert each element to object.
 // Generic collection classes are strongly typed collections because the compiler knows the specific type of the collection's elements and can raise an error at compile time if.
 // or example, you try to add an integer to the stringList object in the previous example.
+
+
+/* ### 9. Tuples and anonymous types. ###*/
+// Creating a type for simple sets of related values can be inconvenient if you don't intend to store or pass these values using public APIs.
+// You can create tuples or anonymous types for this purpose.
+
+
+/* ### 10. Nullable value types. ###*/
+// Ordinary value types can't have a value of null.
+// However, you can create nullable value types by appending a ? after the type.
+// For example, int? is an int type that can also have the value null.
+// Nullable value types are instances of the generic struct type System.Nullable<T>.
+// Nullable value types are especially useful when you're passing data to and from databases in which numeric values might be null.
+
+
+/* ### 11. Implicit type declarations. ###*/
+// Implicitly type a local variable (but not class members) by using the var keyword.
+// The variable still receives a type at compile time, but the compiler provides the type.
