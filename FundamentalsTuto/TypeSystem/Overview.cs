@@ -169,3 +169,16 @@ int len = nums.Length;
 // Reference types fully support inheritance.
 // When you create a class, you can inherit from any other interface or class that isn't defined as sealed.
 // Other classes can inherit from your class and override your virtual methods.
+
+
+/* ### 7. Types of literal values. ###*/
+// In C#, the compiler assigns a type to literal values.
+// You can specify how a numeric literal should be typed by appending a letter to the end of the number.
+// For example, to specify that the value 4.56 should be treated as a float , append an "f" or "F" after the number: 4.56f . If you don't append a letter, the compiler infers a type for the literal.
+// Because literals are typed, and all types ultimately derive from System.Object.
+string s = "The answer is " + 5.ToString();
+// Outputs: "The answer is 5"
+Console.WriteLine(s);
+Type type = 12345.GetType();
+// Outputs: "System.Int32"
+Console.WriteLine(type);
