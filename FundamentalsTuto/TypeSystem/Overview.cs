@@ -73,3 +73,25 @@ var query = from item in source
 // . If the type is part of an inheritance hierarchy, choose a record class or a class.
 // . If the type uses polymorphism, choose a class.
 // . If the primary purpose is behavior, choose a class.
+// You can also choose an interface to model a contract: behavior described by members that can be implemented by unrelated types.
+// Interfaces are abstract and declare members that must be implemented by all class or struct types that inherit from that interface.
+
+
+/* ### 4. The common type system. ###*/
+// All types, including built-in numeric types such as System.Int32 (C# keyword: int ),
+// ultimately derive from a single base type, which is System.Object (C# keyword: object).
+// This unified type hierarchy is called the Common Type System (CTS).
+// Each type in the CTS is defined as either a value type or a reference type.
+// . Types that you define by using the struct or record struct keywords are value types. 
+// All the built-in numeric types are structs.
+// . Types that you define by using the class , record class , or record keywords are reference types.
+// The most commonly used types are all organized in the System namespace. However, the namespace in which a type is contained has no relation to whether it's a value type or reference type.
+// A class, struct, or record declaration is like a blueprint that you use to create instances or objects at run time.
+// .. A class is a reference type. When you create an object of the type, the variable to which you assign the object holds only a reference to that memory. When you assign the object reference to a new variable, the new variable refers to the original object. Changes you make through one variable are reflected in the other variable because they both refer to the same data.
+// .. A struct is a value type. When you create a struct, the variable to which you assign the struct holds the struct's actual data. When you assign the struct to a new variable, it's copied. The new variable and the original variable therefore contain two separate copies of the same data. Changes you make to one copy don't affect the other copy.
+// .. Record types can be either reference types ( record class ) or value types ( record struct ). Record types contain methods that support value-equality.
+// In general, use classes to model more complex behavior.
+// Classes typically store data that you modify after a class object is created. Structs are best suited for small data structures.
+// Structs typically store data that you don't modify after the struct is created.
+// Record types are data structures with extra compiler synthesized members.
+// Records typically store data that you don't modify after the object is created.
