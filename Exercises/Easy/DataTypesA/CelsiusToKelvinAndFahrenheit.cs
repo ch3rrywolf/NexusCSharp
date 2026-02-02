@@ -16,3 +16,19 @@
       kelvin= 306
       fahrenheit= 91
 */
+
+using System;
+
+public class CelsiusToKelvinAndFahrenheit
+{
+  public static void Main(string[] args)
+  {
+    Console.WriteLine("Enter the number of degrees celsius");
+    int celsius = Convert.ToInt32(Console.ReadLine());
+
+    int kelvin = celsius + 273;
+    int fahrenheit = celsius * 18 / 10 + 32;
+
+    Console.WriteLine($"kelvin = {kelvin}\nfahrenheit = {fahrenheit}");
+  }
+}
