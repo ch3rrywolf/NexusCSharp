@@ -9,7 +9,8 @@ var client = new HttpClient();
 
 foreach (var employee in employees)
 {
-    var response = await client.PostAsJsonAsync(payrollCalculatorUrl, employee);
+    var employeeAdapter = new PayrollSystemEmployeeAdapter(employee);
+    var response = await client.PostAsJsonAsync(payrollCalculatorUrl, employeeAdapter);
     response.EnsureSuccessStatusCode();
 
     var salary = await response.Content.ReadFromJsonAsync<decimal>();
