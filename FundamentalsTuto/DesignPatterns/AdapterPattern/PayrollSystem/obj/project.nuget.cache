@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "hcVM54KDQBA=",
+  "success": true,
+  "projectFilePath": "/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/AdapterPattern/PayrollSystem/PayrollSystem.csproj",
+  "expectedPackageFiles": [
+    "/home/rust/.nuget/packages/microsoft.aspnetcore.openapi/10.0.1/microsoft.aspnetcore.openapi.10.0.1.nupkg.sha512",
+    "/home/rust/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
