@@ -1,0 +1,15 @@
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SingletonPattern/obj/Debug/net10.0/SingletonPattern.GeneratedMSBuildEditorConfig.editorconfig
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SingletonPattern/obj/Debug/net10.0/SingletonPattern.AssemblyInfoInputs.cache
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SingletonPattern/obj/Debug/net10.0/SingletonPattern.AssemblyInfo.cs
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SingletonPattern/obj/Debug/net10.0/SingletonPattern.csproj.CoreCompileInputs.cache
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SingletonPattern/obj/Debug/net10.0/SingletonPattern.sourcelink.json
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SingletonPattern/bin/Debug/net10.0/SingletonPattern
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SingletonPattern/bin/Debug/net10.0/SingletonPattern.deps.json
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SingletonPattern/bin/Debug/net10.0/SingletonPattern.runtimeconfig.json
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SingletonPattern/bin/Debug/net10.0/SingletonPattern.dll
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SingletonPattern/bin/Debug/net10.0/SingletonPattern.pdb
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SingletonPattern/obj/Debug/net10.0/SingletonPattern.dll
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SingletonPattern/obj/Debug/net10.0/refint/SingletonPattern.dll
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SingletonPattern/obj/Debug/net10.0/SingletonPattern.pdb
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SingletonPattern/obj/Debug/net10.0/SingletonPattern.genruntimeconfig.cache
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SingletonPattern/obj/Debug/net10.0/ref/SingletonPattern.dll

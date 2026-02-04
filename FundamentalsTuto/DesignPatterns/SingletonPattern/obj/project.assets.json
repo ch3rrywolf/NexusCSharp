@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/rust/Desktop/NexusCSharp/FundamentalsTuto/ObjectOrientedProgramming/Encapsulation/Encapsulation.csproj",
-      "projectName": "Encapsulation",
-      "projectPath": "/home/rust/Desktop/NexusCSharp/FundamentalsTuto/ObjectOrientedProgramming/Encapsulation/Encapsulation.csproj",
+      "projectUniqueName": "/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SingletonPattern/SingletonPattern.csproj",
+      "projectName": "SingletonPattern",
+      "projectPath": "/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SingletonPattern/SingletonPattern.csproj",
       "packagesPath": "/home/rust/.nuget/packages/",
-      "outputPath": "/home/rust/Desktop/NexusCSharp/FundamentalsTuto/ObjectOrientedProgramming/Encapsulation/obj/",
+      "outputPath": "/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SingletonPattern/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/rust/.nuget/NuGet/NuGet.Config"
