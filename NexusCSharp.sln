@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FundamentalsTuto", "FundamentalsTuto", "{2116A77E-3D84-A06F-64EF-EE7605DC4347}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ObjectOrientedProgramming", "ObjectOrientedProgramming", "{98147C3D-E1D1-547C-3334-79063DE3DD07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsulation", "FundamentalsTuto\ObjectOrientedProgramming\Encapsulation\Encapsulation.csproj", "{A6341FF1-83F0-AE81-90D1-AA2D5B3EA8B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6341FF1-83F0-AE81-90D1-AA2D5B3EA8B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6341FF1-83F0-AE81-90D1-AA2D5B3EA8B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6341FF1-83F0-AE81-90D1-AA2D5B3EA8B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6341FF1-83F0-AE81-90D1-AA2D5B3EA8B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{98147C3D-E1D1-547C-3334-79063DE3DD07} = {2116A77E-3D84-A06F-64EF-EE7605DC4347}
+		{A6341FF1-83F0-AE81-90D1-AA2D5B3EA8B9} = {98147C3D-E1D1-547C-3334-79063DE3DD07}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F5DAA18-6900-4826-B561-D246F54C4563}
+	EndGlobalSection
+EndGlobal
