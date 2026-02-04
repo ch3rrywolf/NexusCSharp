@@ -1,0 +1,15 @@
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/ObjectOrientedProgramming/Abstraction/obj/Debug/net10.0/Abstraction.GeneratedMSBuildEditorConfig.editorconfig
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/ObjectOrientedProgramming/Abstraction/obj/Debug/net10.0/Abstraction.AssemblyInfoInputs.cache
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/ObjectOrientedProgramming/Abstraction/obj/Debug/net10.0/Abstraction.AssemblyInfo.cs
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/ObjectOrientedProgramming/Abstraction/obj/Debug/net10.0/Abstraction.csproj.CoreCompileInputs.cache
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/ObjectOrientedProgramming/Abstraction/obj/Debug/net10.0/Abstraction.sourcelink.json
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/ObjectOrientedProgramming/Abstraction/bin/Debug/net10.0/Abstraction
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/ObjectOrientedProgramming/Abstraction/bin/Debug/net10.0/Abstraction.deps.json
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/ObjectOrientedProgramming/Abstraction/bin/Debug/net10.0/Abstraction.runtimeconfig.json
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/ObjectOrientedProgramming/Abstraction/bin/Debug/net10.0/Abstraction.dll
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/ObjectOrientedProgramming/Abstraction/bin/Debug/net10.0/Abstraction.pdb
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/ObjectOrientedProgramming/Abstraction/obj/Debug/net10.0/Abstraction.dll
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/ObjectOrientedProgramming/Abstraction/obj/Debug/net10.0/refint/Abstraction.dll
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/ObjectOrientedProgramming/Abstraction/obj/Debug/net10.0/Abstraction.pdb
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/ObjectOrientedProgramming/Abstraction/obj/Debug/net10.0/Abstraction.genruntimeconfig.cache
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/ObjectOrientedProgramming/Abstraction/obj/Debug/net10.0/ref/Abstraction.dll
