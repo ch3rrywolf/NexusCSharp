@@ -1,5 +1,5 @@
 ﻿using StrategyPattern.Core;
-
+using StrategyPattern.Core.DiscountStrategies;
 var dataReader = new CustomerDataReader();
 var customers = dataReader.GetCustomers();
 while (true)
@@ -13,15 +13,14 @@ while (true)
     var unitPrice = double.Parse(Console.ReadLine());
 
     var customer = customers.First(x => x.Id == customerId);
-    var invoice = new Invoice
-    {
-        Customer = customer,
-        Lines = new[]
-        {
-            new InvoiceLine { Quantity = quantity, UnitPrice = unitPrice }
-        },
-        DiscountPercentage = customer.IsEligibleForDiscount ? 0.02 : 0
-    };
+    ICustomerDiscountStrategy customerDiscountStrategy = null;
+    if (customer.Category == CustomerCategory.Silver)
+        customerDiscountStrategy = new SilverCustomerDiscountStrategy();
+    else if (customer.Category == CustomerCategory.Gold)
+        customerDiscountStrategy = new GoldCustomerDiscountStrategy();
+    var invoiceManager = new InvoiceManager();
+    invoiceManager.SetDiscountStrategy(customerDiscountStrategy);
+    var invoice = invoiceManager.CreateInvoice(customer, quantity, unitPrice);
     Console.WriteLine($"Invoice created for customer `{customer.Name}` with net price: {invoice.NetPrice}");
     Console.WriteLine("Press any key to create another invoice");
     Console.ReadKey();

@@ -10,12 +10,13 @@ namespace StrategyPattern.Core
                 {
                     Id = 1,
                     Name = "Ch3rry wolf exe",
-                    IsEligibleForDiscount = true
+                    Category = CustomerCategory.Gold
                 },
                 new Customer
                 {
                     Id = 2,
-                    Name = "C W E"
+                    Name = "C W E",
+                    Category = CustomerCategory.Silver
                 }
             };
         }
