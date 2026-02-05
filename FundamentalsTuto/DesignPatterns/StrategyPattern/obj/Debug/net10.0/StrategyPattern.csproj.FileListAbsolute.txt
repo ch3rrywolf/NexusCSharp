@@ -1,0 +1,15 @@
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/StrategyPattern/obj/Debug/net10.0/StrategyPattern.GeneratedMSBuildEditorConfig.editorconfig
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/StrategyPattern/obj/Debug/net10.0/StrategyPattern.AssemblyInfoInputs.cache
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/StrategyPattern/obj/Debug/net10.0/StrategyPattern.AssemblyInfo.cs
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/StrategyPattern/obj/Debug/net10.0/StrategyPattern.csproj.CoreCompileInputs.cache
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/StrategyPattern/obj/Debug/net10.0/StrategyPattern.sourcelink.json
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/StrategyPattern/bin/Debug/net10.0/StrategyPattern
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/StrategyPattern/bin/Debug/net10.0/StrategyPattern.deps.json
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/StrategyPattern/bin/Debug/net10.0/StrategyPattern.runtimeconfig.json
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/StrategyPattern/bin/Debug/net10.0/StrategyPattern.dll
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/StrategyPattern/bin/Debug/net10.0/StrategyPattern.pdb
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/StrategyPattern/obj/Debug/net10.0/StrategyPattern.dll
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/StrategyPattern/obj/Debug/net10.0/refint/StrategyPattern.dll
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/StrategyPattern/obj/Debug/net10.0/StrategyPattern.pdb
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/StrategyPattern/obj/Debug/net10.0/StrategyPattern.genruntimeconfig.cache
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/StrategyPattern/obj/Debug/net10.0/ref/StrategyPattern.dll
