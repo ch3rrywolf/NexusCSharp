@@ -1,0 +1,15 @@
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/NullObject/obj/Debug/net10.0/NullObject.GeneratedMSBuildEditorConfig.editorconfig
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/NullObject/obj/Debug/net10.0/NullObject.AssemblyInfoInputs.cache
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/NullObject/obj/Debug/net10.0/NullObject.AssemblyInfo.cs
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/NullObject/obj/Debug/net10.0/NullObject.csproj.CoreCompileInputs.cache
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/NullObject/obj/Debug/net10.0/NullObject.sourcelink.json
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/NullObject/bin/Debug/net10.0/NullObject
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/NullObject/bin/Debug/net10.0/NullObject.deps.json
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/NullObject/bin/Debug/net10.0/NullObject.runtimeconfig.json
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/NullObject/bin/Debug/net10.0/NullObject.dll
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/NullObject/bin/Debug/net10.0/NullObject.pdb
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/NullObject/obj/Debug/net10.0/NullObject.dll
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/NullObject/obj/Debug/net10.0/refint/NullObject.dll
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/NullObject/obj/Debug/net10.0/NullObject.pdb
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/NullObject/obj/Debug/net10.0/NullObject.genruntimeconfig.cache
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/NullObject/obj/Debug/net10.0/ref/NullObject.dll
