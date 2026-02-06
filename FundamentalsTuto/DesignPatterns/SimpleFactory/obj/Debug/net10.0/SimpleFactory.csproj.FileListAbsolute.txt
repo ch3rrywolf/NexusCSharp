@@ -1,0 +1,15 @@
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SimpleFactory/obj/Debug/net10.0/SimpleFactory.GeneratedMSBuildEditorConfig.editorconfig
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SimpleFactory/obj/Debug/net10.0/SimpleFactory.AssemblyInfoInputs.cache
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SimpleFactory/obj/Debug/net10.0/SimpleFactory.AssemblyInfo.cs
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SimpleFactory/obj/Debug/net10.0/SimpleFactory.csproj.CoreCompileInputs.cache
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SimpleFactory/obj/Debug/net10.0/SimpleFactory.sourcelink.json
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SimpleFactory/bin/Debug/net10.0/SimpleFactory
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SimpleFactory/bin/Debug/net10.0/SimpleFactory.deps.json
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SimpleFactory/bin/Debug/net10.0/SimpleFactory.runtimeconfig.json
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SimpleFactory/bin/Debug/net10.0/SimpleFactory.dll
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SimpleFactory/bin/Debug/net10.0/SimpleFactory.pdb
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SimpleFactory/obj/Debug/net10.0/SimpleFactory.dll
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SimpleFactory/obj/Debug/net10.0/refint/SimpleFactory.dll
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SimpleFactory/obj/Debug/net10.0/SimpleFactory.pdb
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SimpleFactory/obj/Debug/net10.0/SimpleFactory.genruntimeconfig.cache
+/home/rust/Desktop/NexusCSharp/FundamentalsTuto/DesignPatterns/SimpleFactory/obj/Debug/net10.0/ref/SimpleFactory.dll
